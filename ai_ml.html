@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/ML - Electronic Manifest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container my-5">
+        <h1>AI/ML Solutions</h1>
+        
+        <!-- AI/ML Projects -->
+        <div class="projects-section">
+            <h2>AI/ML Projects</h2>
+            <p>Explore our AI and ML projects, from machine learning algorithms to AI-driven applications.</p>
+            <!-- Add project details here -->
+        </div>
+
+        <!-- Articles -->
+        <div class="articles-section my-4">
+            <h2>Articles on AI/ML</h2>
+            <p>Read our latest articles on artificial intelligence and machine learning.</p>
+            <!-- Add article details here -->
+        </div>
+
+        <!-- Books -->
+        <div class="books-section my-4">
+            <h2>Recommended Books on AI/ML</h2>
+            <div class="book-info">
+                <img src="{{ url_for('static', filename='images/ai-ml-book-cover.jpg') }}" alt="AI/ML Book Cover" class="img-fluid">
+                <div class="book-details">
+                    <h4>Title: Deep Learning</h4>
+                    <p><strong>Author:</strong> Ian Goodfellow, Yoshua Bengio, Aaron Courville</p>
+                    <p><strong>Description:</strong> This book provides a comprehensive introduction to deep learning, covering neural networks, deep learning architectures, and practical applications.</p>
+                    <p><strong>Publisher:</strong> MIT Press</p>
+                    <p><strong>ISBN:</strong> 978-0262035613</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

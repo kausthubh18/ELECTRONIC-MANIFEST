@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Systems - Electronic Manifest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container my-5">
+        <h1>Embedded Systems</h1>
+        
+        <!-- Embedded Systems Projects -->
+        <div class="projects-section">
+            <h2>Embedded Systems Projects</h2>
+            <p>Explore our embedded systems projects, including microcontroller-based designs and real-time systems.</p>
+            <!-- Add project details here -->
+        </div>
+
+        <!-- Articles -->
+        <div class="articles-section my-4">
+            <h2>Articles on Embedded Systems</h2>
+            <p>Read our latest articles on embedded systems and applications.</p>
+            <!-- Add article details here -->
+        </div>
+
+        <!-- Books -->
+        <div class="books-section my-4">
+            <h2>Recommended Books on Embedded Systems</h2>
+            <div class="book-info">
+                <img src="{{ url_for('static', filename='images/embedded-systems-book-cover.jpg') }}" alt="Embedded Systems Book Cover" class="img-fluid">
+                <div class="book-details">
+                    <h4>Title: Embedded Systems: Real-Time Operating Systems for ARM Cortex-M Microcontrollers</h4>
+                    <p><strong>Author:</strong> Jonathan Valvano</p>
+                    <p><strong>Description:</strong> This book provides a detailed introduction to embedded systems and real-time operating systems. It covers ARM Cortex-M microcontrollers and is an essential resource for those working in embedded systems.</p>
+                    <p><strong>Publisher:</strong> CreateSpace Independent Publishing Platform</p>
+                    <p><strong>ISBN:</strong> 978-0999272904</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

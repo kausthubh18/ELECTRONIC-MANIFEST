@@ -1,0 +1,25 @@
+.projects-section, .articles-section, .books-section {
+    margin-bottom: 40px;
+}
+
+.book-info {
+    display: flex;
+    align-items: center;
+}
+
+.book-info img {
+    max-width: 150px; /* Adjust as needed */
+    margin-right: 20px;
+}
+
+.book-details {
+    max-width: 600px; /* Adjust as needed */
+}
+
+.book-details h4 {
+    margin-bottom: 10px;
+}
+
+.book-details p {
+    margin-bottom: 5px;
+}

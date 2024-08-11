@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics - Electronic Manifest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container my-5">
+        <h1>Robotics</h1>
+        
+        <!-- Robotics Projects -->
+        <div class="projects-section">
+            <h2>Robotics Projects</h2>
+            <p>Discover our robotics projects, from autonomous vehicles to robotic arms.</p>
+            <!-- Add project details here -->
+        </div>
+
+        <!-- Articles -->
+        <div class="articles-section my-4">
+            <h2>Articles on Robotics</h2>
+            <p>Read our latest articles on robotics technology and innovations.</p>
+            <!-- Add article details here -->
+        </div>
+
+        <!-- Books -->
+        <div class="books-section my-4">
+            <h2>Recommended Books on Robotics</h2>
+            <div class="book-info">
+                <img src="{{ url_for('static', filename='images/robotics-book-cover.jpg') }}" alt="Robotics Book Cover" class="img-fluid">
+                <div class="book-details">
+                    <h4>Title: Robotics: Modelling, Planning and Control</h4>
+                    <p><strong>Author:</strong> Bruno Siciliano, Lorenzo Sciavicco</p>
+                    <p><strong>Description:</strong> This comprehensive book covers the fundamental concepts of robotics, including modelling, planning, and control. It's suitable for both students and professionals in the field.</p>
+                    <p><strong>Publisher:</strong> Springer</p>
+                    <p><strong>ISBN:</strong> 978-1852335671</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

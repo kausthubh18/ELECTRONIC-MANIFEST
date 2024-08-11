@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Our Services{% endblock %}
+
+{% block content %}
+    <div class="container my-5">
+        <h1>Our Services</h1>
+        <div class="row">
+            <!-- IoT Service -->
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='services/iot.jpg') }}" alt="IoT Services" class="img-fluid rounded" style="width: 300px; height: 200px;">
+                <h3>IoT Solutions</h3>
+                <p>We provide cutting-edge IoT solutions, enabling seamless connectivity and automation across various industries.</p>
+            </div>
+
+            <!-- VLSI Service -->
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='services/vlsi.jpg') }}" alt="VLSI Design" class="img-fluid rounded" style="width: 300px; height: 200px;">
+                <h3>VLSI Design</h3>
+                <p>Our VLSI design services focus on creating highly integrated circuits for efficient and powerful electronic devices.</p>
+            </div>
+
+            <!-- AI/ML Service -->
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='services/ai_ml.jpg') }}" alt="AI/ML Solutions" class="img-fluid rounded" style="width: 300px; height: 200px;">
+                <h3>AI/ML Solutions</h3>
+                <p>We specialize in AI/ML, delivering intelligent solutions that enhance decision-making and automate complex processes.</p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <!-- Robotics Service -->
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='services/robotics.jpg') }}" alt="Robotics" class="img-fluid rounded" style="width: 300px; height: 200px;">
+                <h3>Robotics</h3>
+                <p>Our robotics services include designing, building, and programming robots for a variety of applications.</p>
+            </div>
+
+            <!-- Embedded Systems Service -->
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='services/embedded_systems.jpg') }}" alt="Embedded Systems" class="img-fluid rounded" style="width: 300px; height: 200px;">
+                <h3>Embedded Systems</h3>
+                <p>We offer comprehensive embedded systems solutions, integrating hardware and software to build robust applications.</p>
+            </div>
+
+            <!-- Additional Service -->
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='services/additional_service.jpg') }}" alt="Additional Service" class="img-fluid rounded" style="width: 300px; height: 200px;">
+                <h3>Additional Service</h3>
+                <p>We continually expand our offerings to include new and innovative technological services that meet our clients' evolving needs.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

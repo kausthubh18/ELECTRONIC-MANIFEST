@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+    <div class="container my-5">
+        <h1>About Us</h1>
+        <p>At Electronic Manifest, we are driven by a singular vision: to lead the way in technological innovation and to make the impossible possible. Founded on the principles of creativity, excellence, and collaboration, we have established ourselves as a powerhouse in the fields of IoT, VLSI, Embedded Systems, Robotics, and AI/ML. Our journey is one of continuous growth, learning, and evolution, fueled by a relentless pursuit of knowledge and an unwavering commitment to our craft.</p>
+
+        <p>We believe that technology is not just a tool but a catalyst for change—a means to reshape industries, empower individuals, and transform societies. Our approach to innovation is holistic, combining cutting-edge research with practical application to deliver solutions that are not only advanced but also impactful. Whether we are developing smart devices, designing complex circuits, or creating intelligent software, our focus is always on pushing the boundaries of what’s possible.</p>
+
+        <p>Our culture is built on a foundation of collaboration and mutual respect. We understand that the best ideas come from diverse perspectives, and we foster an environment where creativity can thrive. Every member of our team is valued for their unique contributions, and we work together to turn bold ideas into reality. Our commitment to excellence is reflected in everything we do, from the meticulous attention to detail in our projects to the way we engage with our clients and partners.</p>
+
+        <p>As we look to the future, we are excited about the endless possibilities that lie ahead. We are constantly exploring new technologies, new methodologies, and new ways of thinking to stay ahead of the curve. Our goal is not just to keep up with the pace of change but to set the pace—to be the innovators that others follow. We are committed to making a lasting impact on the world through our work, and we are driven by the belief that technology, when used responsibly and creatively, can be a force for good.</p>
+
+        <p>At Electronic Manifest, our journey is just beginning. We invite you to join us as we continue to explore, innovate, and inspire. Together, we can build a future that is smarter, more connected, and more sustainable.</p>
+
+        <h2>Our Mission</h2>
+        <p>At Electronic Manifest, our mission is to be at the forefront of technological innovation, transforming ideas into reality through our expertise in IoT, VLSI, Embedded Systems, Robotics, and AI/ML. We are committed to creating intelligent and sustainable solutions that address the complex challenges of today and anticipate the needs of tomorrow.</p>
+        <p>Our goal is to push the boundaries of what’s possible in technology by fostering a culture of continuous learning, creativity, and collaboration. We believe that technology should not only be advanced but also accessible and impactful, driving positive change across industries and improving the quality of life for people around the globe.</p>
+        <p>Through relentless pursuit of excellence and a deep passion for innovation, we aim to set new standards in the tech industry. Our mission is to empower businesses, enhance connectivity, and contribute to the development of a smarter, more connected, and sustainable world. We are dedicated to solving the toughest problems with precision and integrity, ensuring that our solutions are not only cutting-edge but also ethically sound and environmentally responsible.</p>
+        <p>At Electronic Manifest, we don't just build technology; we build the future.</p>
+
+        <h2>Our Team</h2>
+        <p>Our team consists of passionate and skilled professionals committed to delivering high-quality projects and services. We collaborate to bring the best technological solutions to our clients.</p>
+
+        <!-- Team Members Section -->
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='team/neeraj.jpg') }}" alt="Neeraj" class="img-fluid rounded-circle" style="width: 200px; height: 200px;">
+                <h4>Neeraj</h4>
+                <p>Neeraj is our AI/ML and data science expert, leading the development of intelligent algorithms and innovative applications. His expertise also extends to app development, where he transforms complex ideas into user-friendly solutions.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='team/kausthubh.jpg') }}" alt="Kausthubh" class="img-fluid rounded-circle" style="width: 200px; height: 200px;">
+                <h4>Kausthubh</h4>
+                <p>Kausthubh specializes in IoT and VLSI, bringing a unique blend of hardware and software knowledge to our projects. He is also involved in AI/ML initiatives, contributing to both design and implementation.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='team/harshith.jpg') }}" alt="Harshith" class="img-fluid rounded-circle" style="width: 200px; height: 200px;">
+                <h4>Harshith</h4>
+                <p>Harshith is a key player in our IoT and VLSI teams, focusing on the design and implementation of cutting-edge technologies. He also collaborates on AI/ML projects, ensuring seamless integration between hardware and software solutions.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

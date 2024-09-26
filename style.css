@@ -1,25 +1,71 @@
-.projects-section, .articles-section, .books-section {
-    margin-bottom: 40px;
+/* Full-width banner image */
+header {
+    position: relative;
+    width: 100%;
+    height: 30vh; /* Adjust this value based on how much vertical space you want for the banner */
+    overflow: hidden; /* Hide any overflow */
+    margin-bottom: 20px; /* Adds space below the banner */
 }
 
-.book-info {
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+/* Additional Styles for the Login Page */
+body {
+    background-color: #f8f9fa;
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.book-info img {
-    max-width: 150px; /* Adjust as needed */
-    margin-right: 20px;
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adds shadow for better visibility */
+    max-width: 500px; /* Adjust as needed */
+    width: 100%;
 }
 
-.book-details {
-    max-width: 600px; /* Adjust as needed */
+.card-body {
+    padding: 2rem;
 }
 
-.book-details h4 {
-    margin-bottom: 10px;
+.card-title {
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-.book-details p {
-    margin-bottom: 5px;
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.login-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.login-header h2 {
+    margin: 0;
+    color: #007bff;
 }

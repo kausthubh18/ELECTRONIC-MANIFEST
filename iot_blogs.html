@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}IoT Blogs{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    
+    <main>
+        {% block content %}
+            <div class="container my-5">
+                <h1>Innovations in Internet of Things (IoT)</h1>
+                
+                <p>The internet of things was first known as embedded internet later in the year 1999 the scientist named Kevin Ashton introduced the name Internet of Things from that time it is called as Internet Of Things [IoT]. The embedded systems or internet is a part of IoT. The embedded systems helps to detect the things and these systems are hardware components that collects data and transfers from one place to another place like sensors, chips these are enable devices to communicate.</p>
+                
+                <p>There are main IoT devices like wearable watches, sensors, proximetry sensors etc. In fitbits some sensors are used like HRM sensor, accelerometer sensor.</p>
+
+                <h2>A) Heart Rate Monitor Sensor (HRM)</h2>
+                <img src="{{ url_for('static', filename='hrm-sensor.jpg') }}" alt="Heart Rate Monitor Sensor" class="img-fluid">
+                <p>The Heart Rate Monitor (HRM) sensor is designed to detect and measure the heart rate by monitoring the blood flow. This sensor is often used in wearable fitness devices to provide real-time heart rate data, which can help in tracking physical activities, assessing fitness levels, and providing health insights.</p>
+
+                <p>HRM sensors use optical or electrical methods to detect pulse changes, making them essential in applications like sports tracking and healthcare monitoring. They are integrated into fitness bands, smartwatches, and medical devices to provide accurate heart rate information.</p>
+
+                <h2>B) Accelerometer Sensor</h2>
+                <img src="{{ url_for('static', filename='accelerometer-sensor.jpg') }}" alt="Accelerometer Sensor" class="img-fluid">
+                <p>The Accelerometer Sensor measures acceleration forces, detecting changes in velocity or movement. It helps in monitoring physical activities by measuring the movement in different directions, such as up/down, left/right, and forward/backward.</p>
+
+                <p>Accelerometers are used in various applications, including fitness trackers, smartphones, and automotive systems. In fitness devices, they help calculate calories burned, track steps, and measure activity intensity. They also play a crucial role in navigation systems, gaming devices, and vibration analysis.</p>
+
+                <p>The above two sensors are most important sensors in any fitbits. In day-to-day life, IoT is playing a crucial role by transmitting data, collecting data, and transferring it to others. In the healthcare sector, IoT devices can detect issues, measure vital signs like blood pressure and heart rate, and send alerts to healthcare providers and relatives.</p>
+
+                <p>Even in aircraft, some IoT devices have been invented, such as RFID devices, BBT devices, and GPS-enabled tracking devices.</p>
+
+                <h2>A) RFID (Radio Frequency Identification Device)</h2>
+                <img src="{{ url_for('static', filename='rfid-device.jpg') }}" alt="RFID Device" class="img-fluid">
+                <p>This device is used to detect GPS systems in aircraft and is eco-friendly. RFID technology uses electromagnetic fields to automatically identify and track tags attached to objects. These tags contain electronically stored information that can be read by RFID readers.</p>
+
+                <h2>B) BBT (Bluetooth Based Tracking Device)</h2>
+                <img src="{{ url_for('static', filename='bbt-device.jpg') }}" alt="BBT Device" class="img-fluid">
+                <p>This device detects nearby tools and allows systems for proximity tracking of goods. BBT devices use Bluetooth technology to communicate with other nearby devices, enabling asset tracking and management within a defined range.</p>
+
+                <h2>C) GPS (Global Positioning System)</h2>
+                <img src="{{ url_for('static', filename='gps-device.jpg') }}" alt="GPS Device" class="img-fluid">
+                <p>In aircraft, GPS is used to transmit data and collect navigation information. GPS devices are attached to equipment inside and outside the aircraft, monitoring movements and providing real-time location data. This technology ensures precise navigation and tracking of the aircraft.</p>
+                
+                <p>So like this there are many devices which are eco-friendly in nature and easily communicate to people.</p>
+            </div>
+        {% endblock %}
+    </main>
+
+    {% include 'footer.html' %}
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
